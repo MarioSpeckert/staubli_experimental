@@ -23,7 +23,8 @@ joint_state_controller:
   publish_rate: 50
 controller_list:
   - name: manipulator_controller
-    action_ns: follow_joint_trajectory
+    #action_ns: follow_joint_trajectory
+    action_ns: joint_trajectory_action
     default: True
     type: FollowJointTrajectory
     joints:
